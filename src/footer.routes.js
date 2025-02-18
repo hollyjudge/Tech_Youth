@@ -1,7 +1,6 @@
 // @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 // Material Kit 2 React components
@@ -26,10 +25,6 @@ export default {
     {
       icon: <TwitterIcon />,
       link: "https://twitter.com/creativetim",
-    },
-    {
-      icon: <GitHubIcon />,
-      link: "https://github.com/creativetimofficial",
     },
     {
       icon: <YouTubeIcon />,
@@ -72,20 +67,4 @@ export default {
       ],
     },
   ],
-  copyright: (
-    <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. Copyright &copy; {date} Material Kit by{" "}
-      <MKTypography
-        component="a"
-        href="https://www.creative-tim.com"
-        target="_blank"
-        rel="noreferrer"
-        variant="button"
-        fontWeight="regular"
-      >
-        Creative Tim
-      </MKTypography>
-      .
-    </MKTypography>
-  ),
 };
