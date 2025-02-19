@@ -8,31 +8,24 @@ import MKSocialButton from "components/MKSocialButton";
 
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
-
 import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
-import bgImage from "assets/images/TechYouth.png";
+import bgImage from "assets/images/TechYouth_nocaption.png";
 
 function Presentation() {
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-        sticky
-      />
+      <DefaultNavbar routes={routes} sticky />
       <MKBox
-        minHeight="75vh"
+        minHeight="55vh"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`,
@@ -42,6 +35,29 @@ function Presentation() {
           placeItems: "center",
         }}
       >
+        <Container>
+          <Grid
+            container
+            item
+            xs={12}
+            lg={8}
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+            sx={{ marginTop: "110px", mx: "auto", textAlign: "center" }}
+          >
+            <MKTypography
+              variant="body1"
+              color="white"
+              opacity={0.8}
+              mt={1}
+              mb={3}
+            >
+              Empowering South Africa’s youth with tech skills for a brighter
+              future​
+            </MKTypography>
+          </Grid>
+        </Container>
       </MKBox>
       <Card
         sx={{
@@ -49,7 +65,8 @@ function Presentation() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
-          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backgroundColor: ({ palette: { white }, functions: { rgba } }) =>
+            rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
@@ -64,7 +81,13 @@ function Presentation() {
         <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
-              <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
+              <Grid
+                item
+                xs={12}
+                lg={5}
+                ml="auto"
+                sx={{ textAlign: { xs: "center", lg: "left" } }}
+              >
                 <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
                   Thank you for your support!
                 </MKTypography>

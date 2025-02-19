@@ -15,14 +15,12 @@ function Team() {
   return (
     <MKBox
       component="section"
-      variant="gradient"
-      bgColor="white"
       position="relative"
       py={6}
       px={{ xs: 2, lg: 0 }}
       mx={-2}
     >
-      <Container>
+      <Container >
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
             <MKTypography variant="h3" color="black">
@@ -36,8 +34,8 @@ function Team() {
               <HorizontalTeamCard
                 image={Liza}
                 name="Lizalise Luxande"
-                position={{ color: "info", label: "Founder" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                position={{ color: "info", label: "Co-founder" }}
+                description="Lizalise holds a Business Science degree in Computer Science from the University of Cape Town and currently works at Boston Consulting Group in management consulting. During her time at UCT, she served as the Chairperson of Women in Computer Science, advocating for greater inclusivity in tech. Passionate about driving impact beyond the corporate world, she co-founded Tech Youth to leverage technology and strategy for meaningful change."
               />
             </MKBox>
           </Grid>
@@ -46,8 +44,8 @@ function Team() {
               <HorizontalTeamCard
                 image={Holly}
                 name="Holly Judge"
-                position={{ color: "info", label: "Head of Technology" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                position={{ color: "info", label: "Co-founder" }}
+                description="Holly is a software engineer with a BA in English Literature and Computer Science and a BSc Honours in Computer Science from the University of Cape Town. She has worked at First National Bank and NTT Data, gaining extensive experience in software development and technology solutions. Passionate about using technology for social impact, she co-founded Tech Youth to drive meaningful change through innovation."
               />
             </MKBox>
           </Grid>

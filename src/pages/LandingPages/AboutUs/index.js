@@ -1,32 +1,21 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
-
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-
-import Information from "pages/LandingPages/AboutUs/sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
-
 import routes from "routes";
 import footerRoutes from "footer.routes";
-
 import bgImage from "assets/images/TechYouth_BG.png";
 
 function AboutUs() {
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-      />
+      <DefaultNavbar routes={routes} />
       <MKBox
-        minHeight="60vh"
+        minHeight="50vh"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`,
@@ -58,9 +47,15 @@ function AboutUs() {
             >
               Meet the Team
             </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+            <MKTypography
+              variant="body1"
+              color="white"
+              opacity={0.8}
+              mt={1}
+              mb={3}
+            >
+              Tech Youth was founded by a diverse and passionate team committed
+              to bridging the gap between technology and opportunity
             </MKTypography>
           </Grid>
         </Container>
@@ -71,6 +66,9 @@ function AboutUs() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
+          backgroundColor: ({ palette: { white }, functions: { rgba } }) =>
+            rgba(white.main, 0.8),
+          backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
